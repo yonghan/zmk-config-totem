@@ -104,10 +104,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-          &mt N1 Q  &mt N2 W  &mt N3 E  &mt N4 R   &mt N5 T              &mt N6 Y        &mt N7 U   &mt N8 I   &mt N9 O  &mt N0 P
-          &kp A     &kp S     &kp D     &kp F      &mt LSHIFT G          &kp H           &kp J      &kp K      &kp L     &kp SEMICOLON
-&kp BSLH  &kp Z     &kp X     &kp C     &kp V      &kp B                 &kp N           &kp M      &kp COMMA  &kp DOT   &kp FSLH       &kp APOS
-                              &kp DEL   &lt 1 TAB  &mt LEFT_GUI SPACE    &mt RGUI ENTER  &lt 2 ESC  &kp BSPC
+          &mt N1 Q  &mt N2 W  &mt N3 E  &mt N4 R     &mt N5 T              &mt N6 Y        &mt N7 U         &mt N8 I   &mt N9 O  &mt N0 P
+          &kp A     &kp S     &kp D     &kp F        &mt LSHIFT G          &mt RSHIFT H    &kp J            &kp K      &kp L     &kp SEMICOLON
+&kp BSLH  &kp Z     &kp X     &kp C     &kp V        &kp B                 &kp N           &kp M            &kp COMMA  &kp DOT   &kp FSLH       &kp APOS
+                              &kp TAB   &lt 1 SPACE  &mt LEFT_GUI SPACE    &mt RGUI ENTER  &lt 2 BACKSPACE  &kp DEL
             >;
         };
 
@@ -182,10 +182,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &sys_reset   &bt BT_CLR  &out OUT_TOG  &none  &none    &none  &kp F7  &kp F8  &kp F9  &kp F12
-       &bootloader  &bt BT_NXT  &none         &none  &none    &none  &kp F4  &kp F5  &kp F6  &kp F11
-&none  &none        &bt BT_PRV  &none         &none  &none    &none  &kp F1  &kp F2  &kp F3  &kp F10  &none
-                                &none         &none  &none    &none  &trans  &none
+       &sys_reset   &bt BT_CLR  &out OUT_TOG  &none   &none    &none   &kp F7  &kp F8  &kp F9  &kp F12
+       &bootloader  &bt BT_NXT  &none         &none   &none    &none   &kp F4  &kp F5  &kp F6  &kp F11
+&none  &none        &bt BT_PRV  &none         &none   &none    &none   &kp F1  &kp F2  &kp F3  &kp F10  &none
+                                &none         &trans  &none    &trans  &none   &none
             >;
         };
 
@@ -212,7 +212,7 @@
        &none  &none  &none  &none  &none     &none  &none           &none           &none           &none
        &none  &none  &none  &none  &none     &none  &kp LC(LA(F4))  &kp LC(LA(F5))  &kp LC(LA(F6))  &none
 &none  &none  &none  &none  &none  &none     &none  &kp LC(LA(F1))  &kp LC(LA(F2))  &kp LC(LA(F3))  &none  &none
-                     &none  &none  &trans    &none  &none           &none
+                     &none  &none  &trans    &none  &trans          &none
             >;
         };
     };
