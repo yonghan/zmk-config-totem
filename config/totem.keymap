@@ -26,7 +26,7 @@
     quick-tap-ms = <100>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    tapping-term-ms = <175>;
 };
 
 / {
@@ -79,6 +79,16 @@
             bindings = <&kp RPAR>;
             key-positions = <26 27>;
             layers = <0>;
+        };
+
+        comboMINUS {
+            bindings = <&kp MINUS>;
+            key-positions = <4 14>;
+        };
+
+        comboEQUAL {
+            bindings = <&kp EQUAL>;
+            key-positions = <5 15>;
         };
     };
 
