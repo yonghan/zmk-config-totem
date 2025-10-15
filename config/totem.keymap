@@ -208,8 +208,8 @@
             bindings = <
        &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS      &kp ASTRK   &kp SQT     &kp DQT
        &none     &none   &none     &none     &as GRAVE    &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT   &none
-&none  &none     &none   &none     &none     &none        &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT  &kp BSLH  &kp C_PP
-                         &none     &none     &mo 4        &kp C_MUTE    &trans        &none
+&none  &none     &none   &none     &none     &none        &kp K_VOL_DN  &kp K_VOL_UP  &kp K_PREV  &kp K_NEXT  &kp BSLH  &kp K_PP
+                         &none     &none     &mo 4        &kp K_MUTE    &trans        &none
             >;
         };
 
