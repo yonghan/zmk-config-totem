@@ -185,10 +185,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-          &none       &kp GRAVE  &kp QUESTION    &kp EQUAL         &kp LBRC    &kp RBRC  &as N7  &as N8   &as N9  &none
-          &kp INT_RO  &kp TILDE  &kp PLUS        &mt LSHIFT MINUS  &kp LBKT    &kp RBKT  &as N4  &as N5   &as N6  &none
-&kp K_PP  &kp LANG1   &none      &kp UNDERSCORE  &kp ASTRK         &kp LPAR    &kp RPAR  &as N1  &as N2   &as N3  &none  &none
-                                 &none           &trans            &trans      &none     &kp N0  &kp DOT
+          &none      &kp GRAVE  &kp QUESTION    &kp EQUAL         &kp LBRC    &kp RBRC  &as N7  &as N8   &as N9  &none
+          &none      &kp TILDE  &kp PLUS        &mt LSHIFT MINUS  &kp LBKT    &kp RBKT  &as N4  &as N5   &as N6  &none
+&kp K_PP  &kp LANG1  &none      &kp UNDERSCORE  &kp ASTRK         &kp LPAR    &kp RPAR  &as N1  &as N2   &as N3  &none  &none
+                                &none           &trans            &trans      &none     &kp N0  &kp DOT
             >;
         };
 
