@@ -134,10 +134,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-          &kp SQT       &kp DQT        &kp CARET      &kp QMARK     &kp TILDE        &kp LBKT        &kp LT     &kp EQUAL  &kp GT    &kp RBKT
-          &kp LS(EXCL)  &kp LS(AT)     &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp LEFT_BRACE  &kp LPAR   &kp COLON  &kp RPAR  &kp RBRC
-&kp K_PP  &kp BSLH      &kp LS(TILDE)  &kp LS(PIPE)   &kp SEMI      &kp LS(AMPS)     &kp FSLH        &kp ASTRK  &kp MINUS  &kp PLUS  &kp UNDER  &none
-                                       &none          &mo 4         &trans           &none           &mo 3      &none
+          &kp SQT          &kp DQT    &kp CARET  &kp QMARK   &kp GRAVE    &kp LBKT        &kp LT     &kp EQUAL  &kp GT    &kp RBKT
+          &kp EXCLAMATION  &kp AT     &kp HASH   &kp DOLLAR  &kp PRCNT    &kp LEFT_BRACE  &kp LPAR   &kp COLON  &kp RPAR  &kp RBRC
+&kp K_PP  &kp BSLH         &kp TILDE  &kp PIPE   &kp SEMI    &kp AMPS     &kp FSLH        &kp ASTRK  &kp MINUS  &kp PLUS  &kp UNDER  &none
+                                      &none      &mo 4       &trans       &none           &mo 3      &none
             >;
         };
 
