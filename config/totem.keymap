@@ -83,6 +83,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <190>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -108,9 +109,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &as Q  &as W  &as E      &as R      &as T          &as Y           &as U            &as I      &as O  &as P
-              &as A  &as S  &as D      &as F      &as G          &as H           &as J            &as K      &as L  &as SQT
-&msc SCRL_UP  &as Z  &as X  &as C      &as V      &as B          &as N           &as M            &as COMMA  &as L  &as FSLH  &msc SCRL_DOWN
+              &as Q  &as W  &as E      &as R      &as T          &as Y           &as U            &as I      &as O    &as P
+              &as A  &as S  &as D      &as F      &as G          &as H           &as J            &as K      &as L    &as SQT
+&msc SCRL_UP  &as Z  &as X  &as C      &as V      &as B          &as N           &as M            &as COMMA  &as DOT  &as FSLH  &msc SCRL_DOWN
                             &kp LCTRL  &kp SPACE  &lt 1 ENTER    &mt RGUI ENTER  &lt 2 BACKSPACE  &kp RCTRL
             >;
         };
