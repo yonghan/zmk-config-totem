@@ -130,8 +130,6 @@
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
         nav_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
@@ -156,33 +154,16 @@
             >;
         };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        numnav_layer {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "NUMNAV";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     ˆ     ┃     &     ┃     Ü     ┃     '     ┃     "     ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃     Ä     ┃           ┃    SZ     ┃           ┃           ┃   ┃   MUTE    ┃   YEN     ┃   EURO    ┃  POUND    ┃     Ö     ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃           ┃  EMAIL1   ┃  EMAIL2   ┃           ┃           ┃           ┃   ┃   VOL-    ┃   VOL+    ┃   LAST    ┃   NEXT    ┃     \     ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃    GIF    ┃    ADJ    ┃   ┃           ┃           ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
+        navnum_layer {
             bindings = <
-              &kp LCTRL  &kp LGUI  &kp LS(TAB)  &kp TAB  &kp LALT     &kp COMMA  &kp HOME   &kp UP         &kp END    &kp DEL
-              &kp N1     &kp N2    &kp N3       &kp N4   &kp N5       &kp DOT    &kp LEFT   &kp DOWN       &kp RIGHT  &kp ENTER
-&kp K_VOL_DN  &kp N6     &kp N7    &kp N8       &kp N9   &kp N0       &kp LANG1  &kp PG_UP  &kp PAGE_DOWN  &kp ESC    &kp RCTRL  &kp K_VOL_UP
-                                   &kp LGUI     &none    &kp LSHFT    &none      &trans     &none
+              &kp LCTRL  &kp HOME  &kp UP       &kp END     &kp LALT     &kp LANG1  &kp N7  &kp N8      &kp N9  &trans
+              &kp LSHFT  &kp LEFT  &kp DOWN     &kp RIGHT   &kp PG_UP    &kp COMMA  &kp N4  &kp N5      &kp N6  &trans
+&kp K_VOL_DN  &trans     &trans    &kp LS(TAB)  &kp TAB     &kp PG_DN    &kp N0     &kp N1  &kp N2      &kp N3  &trans  &kp K_VOL_UP
+                                   &kp DEL      &kp LSHIFT  &kp LGUI     &kp RGUI   &trans  &kp PERIOD
             >;
-        };
 
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+            label = "NAVNUM";
+        };
 
         func_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -201,15 +182,12 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp F11  &kp F12  &none   &kp K_PREV  &kp K_NEXT    &kp PRINTSCREEN      &mkp MB1        &mmv MOVE_UP    &mkp MB2         &none
-       &kp F1   &kp F2   &kp F3  &kp F4      &kp F5        &kp LG(PRINTSCREEN)  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&none  &kp F6   &kp F7   &kp F8  &kp F9      &kp F10       &msc SCRL_RIGHT      &msc SCRL_DOWN  &msc SCRL_UP    &msc SCRL_LEFT   &none  &none
-                         &none   &mkp MB1    &none         &none                &none           &none
+              &mkp MB3  &mkp MB2         &mmv MOVE_UP    &mkp MB1         &kp K_PREV        &kp PRINTSCREEN      &kp F7  &kp F8  &kp F9  &kp F12
+              &none     &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp K_NEXT        &kp LG(PRINTSCREEN)  &kp F4  &kp F5  &kp F6  &kp F11
+&kp K_VOL_DN  &none     &msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_DOWN   &msc SCRL_LEFT    &none                &kp F1  &kp F2  &kp F3  &kp F10  &kp K_VOL_UP
+                                         &none           &none            &none             &none                &none   &none
             >;
         };
-
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-        // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
         ttyhw_layer {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -228,10 +206,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none           &none           &none           &none           &none             &bt BT_SEL 0  &bt BT_CLR      &out OUT_BLE  &none  &none
-       &kp LC(LA(F1))  &kp LC(LA(F2))  &kp LC(LA(F3))  &kp LC(LA(F4))  &kp LC(LA(F5))    &bt BT_SEL 1  &bt BT_CLR_ALL  &out OUT_USB  &none  &none
-&none  &kp LC(LA(F6))  &none           &none           &none           &none             &bt BT_SEL 2  &none           &none         &none  &none  &kp RC(RA(RS(K)))
-                                       &none           &trans          &ease             &kp K_SLEEP   &none           &none
+       &none  &kp F21  &kp F20  &kp F19  &none    &bt BT_SEL 0  &bt BT_CLR      &out OUT_BLE    &out OUT_USB    &bt BT_CLR_ALL
+       &none  &kp F18  &kp F17  &kp F16  &none    &bt BT_SEL 1  &kp LC(LA(F4))  &kp LC(LA(F5))  &kp LA(LC(F6))  &none
+&none  &none  &kp F15  &kp F14  &kp F13  &none    &bt BT_SEL 2  &kp LC(LA(F1))  &kp LC(LA(F2))  &kp LC(LA(F3))  &none           &kp RC(RA(RS(K)))
+                       &ease2   &trans   &ease    &kp K_SLEEP   &none           &none
             >;
         };
     };
