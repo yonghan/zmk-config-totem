@@ -44,6 +44,31 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
+
+        combo_gui+d {
+            bindings = <&kp LG(D)>;
+            key-positions = <11 12>;
+        };
+
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+        };
+
+        combo_del {
+            bindings = <&kp DEL>;
+            key-positions = <8 9>;
+        };
+
+        combo_semicolon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <19 18>;
+        };
+
+        combo_colon {
+            bindings = <&kp COLON>;
+            key-positions = <18 19 17>;
+        };
     };
 
     macros {
