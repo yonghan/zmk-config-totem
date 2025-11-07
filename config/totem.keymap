@@ -112,6 +112,20 @@
             bindings = <&kp LS(Y) &kp LS(C) &kp L &kp POUND &kp E &kp T &kp N0 &kp N5 &kp RET>;
             label = "EASE2";
         };
+
+        macro_dbl_exclm: macro_dbl_exclm {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp EXCL &kp EXCL>;
+            label = "MACRO_DBL_EXCLM";
+        };
+
+        macro_arrow: macro_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp MINUS &kp GT>;
+            label = "MACRO_ARROW";
+        };
     };
 
     behaviors {
@@ -148,10 +162,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &as Q  &as W  &as E      &as R      &as T          &as Y           &as U            &as I      &as O    &as P
-              &as A  &as S  &as D      &as F      &as G          &as H           &as J            &as K      &as L    &as SQT
-&msc SCRL_UP  &as Z  &as X  &as C      &as V      &as B          &as N           &as M            &as COMMA  &as DOT  &as FSLH  &msc SCRL_DOWN
-                            &kp LCTRL  &kp SPACE  &lt 1 ENTER    &mt RGUI ENTER  &lt 2 BACKSPACE  &kp RCTRL
+              &as Q  &as W  &as E      &as R      &as T          &as Y        &as U          &as I      &as O    &as P
+              &as A  &as S  &as D      &as F      &as G          &as H        &as J          &as K      &as L    &as SQT
+&msc SCRL_UP  &as Z  &as X  &as C      &as V      &as B          &as N        &as M          &as COMMA  &as DOT  &as FSLH  &msc SCRL_DOWN
+                            &kp LCTRL  &kp SPACE  &lt 1 ENTER    &lt 2 ENTER  &kp BACKSPACE  &kp RCTRL
             >;
         };
 
@@ -172,19 +186,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-          &kp SQT          &kp DQT    &kp CARET  &kp QMARK   &kp GRAVE    &kp LBKT        &kp LT     &kp EQUAL  &kp GT    &kp RBKT
-          &kp EXCLAMATION  &kp AT     &kp HASH   &kp DOLLAR  &kp PRCNT    &kp LEFT_BRACE  &kp LPAR   &kp COLON  &kp RPAR  &kp RBRC
-&kp K_PP  &kp BSLH         &kp TILDE  &kp PIPE   &kp SEMI    &kp AMPS     &kp FSLH        &kp ASTRK  &kp MINUS  &kp PLUS  &kp UNDER  &none
-                                      &none      &mo 4       &trans       &none           &mo 3      &none
+          &kp GRAVE        &kp TILDE  &kp CARET  &kp UNDER   &kp MINUS    &kp LBKT          &kp LT     &kp EQUAL     &kp GT    &kp RBKT
+          &kp EXCLAMATION  &kp AT     &kp HASH   &kp DOLLAR  &kp PRCNT    &kp LEFT_BRACE    &kp LPAR   &macro_arrow  &kp RPAR  &kp RBRC
+&kp K_PP  &kp LANG1        &none      &kp PIPE   &kp BSLH    &kp AMPS     &macro_dbl_exclm  &kp ASTRK  &none         &kp PLUS  &none     &none
+                                      &none      &mo 4       &trans       &none             &mo 3      &none
             >;
         };
 
         navnum_layer {
             bindings = <
-              &kp LCTRL  &kp HOME  &kp UP       &kp END     &kp LALT     &kp LANG1  &kp N7  &kp N8      &kp N9  &trans
-              &kp LSHFT  &kp LEFT  &kp DOWN     &kp RIGHT   &kp PG_UP    &kp COMMA  &kp N4  &kp N5      &kp N6  &trans
-&kp K_VOL_DN  &trans     &trans    &kp LS(TAB)  &kp TAB     &kp PG_DN    &kp N0     &kp N1  &kp N2      &kp N3  &trans  &kp K_VOL_UP
-                                   &kp DEL      &kp LSHIFT  &kp LGUI     &kp RGUI   &trans  &kp PERIOD
+              &kp LCTRL  &kp HOME  &kp UP       &kp END     &kp LALT     &kp C  &kp N7  &kp N8      &kp N9  &kp F
+              &kp LSHFT  &kp LEFT  &kp DOWN     &kp RIGHT   &kp PG_UP    &kp B  &kp N4  &kp N5      &kp N6  &kp E
+&kp K_VOL_DN  &trans     &trans    &kp LS(TAB)  &kp TAB     &kp PG_DN    &kp A  &kp N1  &kp N2      &kp N3  &kp D  &kp K_VOL_UP
+                                   &kp DEL      &kp LSHIFT  &kp LGUI     &none  &kp N0  &kp PERIOD
             >;
 
             label = "NAVNUM";
