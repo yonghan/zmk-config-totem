@@ -171,9 +171,9 @@
 
         colemak_dh {
             bindings = <
-           &as Q  &as W  &as F   &as P   &as B     &as J   &as L   &as U       &as Y    &as SEMI
-           &as A  &as R  &as S   &as T   &as G     &as M   &as N   &as E       &as I    &as O
-&as GRAVE  &as Z  &as X  &as C   &as D   &as V     &as K   &as H   &as LS(LT)  &as DOT  &as FSLH  &as APOS
+           &as Q  &as W  &as F   &as P   &as B     &as J   &as L   &as U      &as Y    &as SEMI
+           &as A  &as R  &as S   &as T   &as G     &as M   &as N   &as E      &as I    &as O
+&as GRAVE  &as Z  &as X  &as C   &as D   &as V     &as K   &as H   &as COMMA  &as DOT  &as FSLH  &as APOS
                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
