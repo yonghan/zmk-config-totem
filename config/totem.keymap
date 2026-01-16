@@ -162,10 +162,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-              &as Q  &as W  &as E      &as R      &as T          &as Y        &as U          &as I      &as O    &as P
-              &as A  &as S  &as D      &as F      &as G          &as H        &as J          &as K      &as L    &as SQT
-&msc SCRL_UP  &as Z  &as X  &as C      &as V      &as B          &as N        &as M          &as COMMA  &as DOT  &as FSLH  &msc SCRL_DOWN
-                            &kp LCTRL  &kp SPACE  &lt 4 ENTER    &lt 3 ENTER  &kp BACKSPACE  &kp RCTRL
+              &as Q  &as W  &as E      &as R        &as T          &as Y        &as U            &as I      &as O    &as P
+              &as A  &as S  &as D      &as F        &as G          &as H        &as J            &as K      &as L    &as SQT
+&msc SCRL_UP  &as Z  &as X  &as C      &as V        &as B          &as N        &as M            &as COMMA  &as DOT  &as FSLH  &msc SCRL_DOWN
+                            &kp LCTRL  &lt 7 SPACE  &lt 5 ENTER    &lt 3 ENTER  &lt 4 BACKSPACE  &kp RSHFT
             >;
         };
 
@@ -208,22 +208,20 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-          &kp GRAVE        &kp TILDE  &kp CARET  &kp UNDER   &kp MINUS    &kp LBKT          &kp LT     &kp EQUAL     &kp GT    &kp RBKT
-          &kp EXCLAMATION  &kp AT     &kp HASH   &kp DOLLAR  &kp PRCNT    &kp LEFT_BRACE    &kp LPAR   &macro_arrow  &kp RPAR  &kp RBRC
-&kp K_PP  &kp LANG1        &none      &kp PIPE   &kp BSLH    &kp AMPS     &macro_dbl_exclm  &kp ASTRK  &none         &kp PLUS  &none     &none
-                                      &none      &mo 5       &none        &none             &mo 6      &none
+          &kp EXCL   &kp AT    &kp HASH   &kp DLLR  &kp PRCNT    &none  &macro_dbl_exclm  &none      &none     &none
+          &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR     &none  &kp RCTRL         &kp RSHFT  &kp RALT  &kp RGUI
+&kp K_PP  &kp GRAVE  &kp BSLH  &kp LBKT   &kp RBKT  &kp EQUAL    &none  &macro_arrow      &none      &none     &none     &none
+                               &kp MINUS  &none     &none        &none  &none             &none
             >;
         };
 
-        navnum_layer {
+        num_layer {
             bindings = <
-              &kp LCTRL  &kp HOME  &kp UP       &kp END    &kp LALT     &kp C          &kp N7  &kp N8      &kp N9  &kp F
-              &kp LSHFT  &kp LEFT  &kp DOWN     &kp RIGHT  &kp PG_UP    &kp B          &kp N4  &kp N5      &kp N6  &kp E
-&kp K_VOL_DN  &trans     &trans    &kp LS(TAB)  &kp TAB    &kp PG_DN    &kp A          &kp N1  &kp N2      &kp N3  &kp D  &kp K_VOL_UP
-                                   &kp DEL      &none      &none        &kp RIGHT_GUI  &kp N0  &kp PERIOD
+       &kp A     &kp B     &kp C      &kp D      &kp E    &kp FSLH  &kp N7  &kp N8  &kp N9  &kp MINUS
+       &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &kp F    &kp STAR  &kp N4  &kp N5  &kp N6  &kp PLUS
+&none  &none     &none     &none      &kp COLON  &none    &kp N0    &kp N1  &kp N2  &kp N3  &kp DOT    &none
+                           &none      &none      &none    &none     &trans  &none
             >;
-
-            label = "NAVNUM";
         };
 
         func_layer {
@@ -244,7 +242,7 @@
 
             bindings = <
               &mkp MB3  &mkp MB2         &mmv MOVE_UP    &mkp MB1         &kp K_PREV        &kp PRINTSCREEN      &kp F7  &kp F8  &kp F9  &kp F12
-              &none     &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp K_NEXT        &kp LG(PRINTSCREEN)  &kp F4  &kp F5  &kp F6  &kp F11
+              &mo 6     &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp K_NEXT        &kp LG(PRINTSCREEN)  &kp F4  &kp F5  &kp F6  &kp F11
 &kp K_VOL_DN  &none     &msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_DOWN   &msc SCRL_LEFT    &none                &kp F1  &kp F2  &kp F3  &kp F10  &kp K_VOL_UP
                                          &none           &none            &none             &none                &none   &none
             >;
@@ -267,10 +265,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none  &kp F21  &kp F20  &kp F19  &none    &bt BT_SEL 0  &bt BT_CLR      &out OUT_BLE    &out OUT_USB    &bt BT_CLR_ALL
-       &none  &kp F18  &kp F17  &kp F16  &none    &bt BT_SEL 1  &kp LC(LA(F4))  &kp LC(LA(F5))  &kp LA(LC(F6))  &none
-&none  &none  &kp F15  &kp F14  &kp F13  &none    &bt BT_SEL 2  &kp LC(LA(F1))  &kp LC(LA(F2))  &kp LC(LA(F3))  &none           &kp RC(RA(RS(K)))
-                       &ease2   &trans   &ease    &none         &none           &kp K_SLEEP
+       &none   &kp F21  &kp F20  &kp F19  &none    &bt BT_SEL 0  &bt BT_CLR      &out OUT_BLE    &out OUT_USB    &bt BT_CLR_ALL
+       &trans  &kp F18  &kp F17  &kp F16  &none    &bt BT_SEL 1  &kp LC(LA(F4))  &kp LC(LA(F5))  &kp LA(LC(F6))  &none
+&none  &none   &kp F15  &kp F14  &kp F13  &none    &bt BT_SEL 2  &kp LC(LA(F1))  &kp LC(LA(F2))  &kp LC(LA(F3))  &none           &kp RC(RA(RS(K)))
+                        &ease2   &none    &ease    &none         &none           &kp K_SLEEP
+            >;
+        };
+
+        window_manager {
+            bindings = <
+       &kp LG(Q)  &kp LS(LG(F))  &kp LG(D)  &kp LG(R)    &kp LC(LG(F))    &kp PG_UP  &kp HOME       &kp UP         &kp END    &none
+       &kp LGUI   &kp LALT       &kp LSHFT  &kp LCTRL    &kp LG(TAB)      &kp PG_DN  &kp LEFT       &kp DOWN       &kp RIGHT  &none
+&none  &none      &none          &kp LG(C)  &kp LG(RET)  &none            &none      &kp RG(PG_UP)  &kp RG(PG_DN)  &none      &none  &none
+                                 &none      &trans       &none            &none      &none          &none
             >;
         };
     };
