@@ -268,7 +268,7 @@
        &none   &kp F21  &kp F20  &kp F19  &none    &bt BT_SEL 0  &bt BT_CLR      &out OUT_BLE    &out OUT_USB    &bt BT_CLR_ALL
        &trans  &kp F18  &kp F17  &kp F16  &none    &bt BT_SEL 1  &kp LC(LA(F4))  &kp LC(LA(F5))  &kp LA(LC(F6))  &none
 &none  &none   &kp F15  &kp F14  &kp F13  &none    &bt BT_SEL 2  &kp LC(LA(F1))  &kp LC(LA(F2))  &kp LC(LA(F3))  &none           &kp RC(RA(RS(K)))
-                        &ease2   &none    &ease    &none         &none           &kp K_SLEEP
+                        &ease2   &none    &ease    &kp K_SLEEP   &none           &none
             >;
         };
 
