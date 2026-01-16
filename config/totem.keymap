@@ -47,7 +47,7 @@
 
         combo_gui+d {
             bindings = <&kp LG(D)>;
-            key-positions = <11 12>;
+            key-positions = <11 12 13>;
         };
 
         combo_tab {
